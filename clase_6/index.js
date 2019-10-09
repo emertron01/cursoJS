@@ -61,7 +61,7 @@ function manejarSubmit(e)
   //desactiva el hecho de enviar del boton,y se queda en la misma pagina
   e.preventDefault();
   //alert("capture el evento submit")
-  var frm = e.target;
+
   //Capturo los datos del formulario web
     var nombre = document.getElementById('txtNombre').value
     var apellido = document.getElementById('txtApellido').value
@@ -100,7 +100,11 @@ function limpiarFormulario()
 {
     document.getElementById('txtNombre').value = '';
 }
+function cargarFormulario (persona)
+{
 
+
+}
 //Muestro por consola todo
 for (const iterator of listaPersonas) {
   console.log(iterator.Saludar())
